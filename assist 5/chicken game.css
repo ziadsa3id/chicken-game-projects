@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../galaxy-space-wallpaper-in-the-style-of-dark-violet-and-light-violet-realistic-usage-of-light-and-color-richly-colored-skies-realistic-textures-generat-ai-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    animation-name: move-icons;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.img div img {
+    width: 70px;
+}
+
+
+@keyframes move-icons {
+    0% {
+        transform: translateX(-5px);
+
+    }
+
+    100% {
+
+        transform: translateX(5px);
+
+    }
+
+
+}
+
+
+#box {
+    width: 80px;
+    height: 80px;
+    /* background-color: blue; */
+    position: absolute;
+    left: 450px;
+    bottom: 0;
+    transition: 1s;
+}
+
+#x {
+    width: 10px;
+    height: 20px;
+    /* background-color:red; */
+    position: absolute;
+    left: 44%;
+    bottom: 90px;
+    transition: 0.4s;
+}
